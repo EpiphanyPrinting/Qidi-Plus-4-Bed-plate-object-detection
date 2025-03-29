@@ -24,7 +24,7 @@ class cv2_bed_object_detect:
             
             if frame is not None:
                 # Save the empty bed image
-                empty_bed_path = "/home/mks/opencvtest/emptybed140.jpg"
+                empty_bed_path = "/home/mks/cv2bedobjectdetect/emptybed140.jpg"
                 cv2.imwrite(empty_bed_path, frame)
                 self.gcode.respond_info(f"Empty bed image captured and saved to {empty_bed_path}")
             else:
@@ -41,7 +41,7 @@ class cv2_bed_object_detect:
             
             if frame is not None:
                 # Save the empty bed image
-                empty_bed_path = "/home/mks/opencvtest/emptybed250.jpg"
+                empty_bed_path = "/home/mks/cv2bedobjectdetect/emptybed250.jpg"
                 cv2.imwrite(empty_bed_path, frame)
                 self.gcode.respond_info(f"Empty bed image captured and saved to {empty_bed_path}")
             else:
@@ -59,7 +59,7 @@ class cv2_bed_object_detect:
             
             if frame is not None:
                 # Save the current bed image
-                current_bed_path = "/home/mks/opencvtest/currentbed.jpg"
+                current_bed_path = "/home/mks/cv2bedobjectdetect/currentbed.jpg"
                 cv2.imwrite(current_bed_path, frame)
                 self.gcode.respond_info(f"Current bed image captured and saved to {current_bed_path}")
             else:
