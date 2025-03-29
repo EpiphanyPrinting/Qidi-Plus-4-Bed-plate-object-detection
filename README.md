@@ -57,6 +57,16 @@ Now that nano is open all we need to do is add
 ```
 and press ctrl+s to save and ctrl+x to exit nano
 
+# Step Four - making the directory for the bed photos
+first we move to the correct directory
+```
+cd ~
+```
+then we make the new folder
+```
+mkdir cv2bedobjectdetect
+```
+
 # Step Four - editing printer.cfg
 At this point I would move over to fluidd and being doing the work through the web interface. 
 in your printer.cfg file under the current includes (right above the mcu section) add
@@ -65,7 +75,7 @@ in your printer.cfg file under the current includes (right above the mcu section
 ```
 Save
 
-# Step Five - Ediditing the macros. 
+# Step Five - Editing the macros. 
 
 So currently we only have 3 macros to edit. There might be more in the fucture but this is the basics. 
 Once again I would use Fluidd to edit these commands. They are located in gcode_macro.cfg
