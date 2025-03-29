@@ -71,9 +71,9 @@ class cv2_bed_object_detect:
     def cmd_check_object_on_bed(self, gcmd):
         try:
             # Load the empty bed and current bed images
-            empty_bed_path_140 = "/home/mks/opencvtest/emptybed140.jpg"
-            empty_bed_path_250 = "/home/mks/opencvtest/emptybed250.jpg"
-            current_bed_path = "/home/mks/opencvtest/currentbed.jpg"
+            empty_bed_path_140 = "/home/mks/cv2bedobjectdetect/emptybed140.jpg"
+            empty_bed_path_250 = "/home/mks/cv2bedobjectdetect/emptybed250.jpg"
+            current_bed_path = "/home/mks/cv2bedobjectdetect/currentbed.jpg"
 
             empty_bed_140 = cv2.imread(empty_bed_path_140)
             empty_bed_250 = cv2.imread(empty_bed_path_250)
