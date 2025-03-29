@@ -5,7 +5,9 @@ Make sure you create a back up of klipper + Config files incase you want to reve
 
 # Things to know
 Anytime after a manual home the printer will need to be put back into position to read the empty bed. X5 Y300 Z140
+
 Anytime you change build plates or damage one enought that it appears as a defect you will need to retake the empty bed photos. See step 6.
+
 Obviously if the camera cant see it then it can't be detected so don't go leaving stuff in the front right corner where the camera can't see. 
 
 #Temporary problems
