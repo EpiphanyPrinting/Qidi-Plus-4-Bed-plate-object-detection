@@ -18,7 +18,7 @@ Obviously if the camera cant see it then it can't be detected so don't go leavin
 
 
 # Temporary problems
-The End print macro sends it to the bottom of the printer everytime. I believe this is being caused by the end gcode in orca slicer. Will look into that soon
+The End print macro sends it to the bottom of the printer everytime. I believe this is being caused by the end gcode in orca slicer. Will look into that soon and update instructions.
 
 # Step one - Installing Open CV to the klippy python enviorment
 First we need to SSH into the printer. You can do this however you feel like. See https://github.com/qidi-community/Plus4-Wiki/blob/main/content/ssh-access/README.md
