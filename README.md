@@ -18,7 +18,9 @@ Obviously if the camera cant see it then it can't be detected so don't go leavin
 
 
 # Temporary problems
-The End print macro sends it to the bottom of the printer everytime. I believe this is being caused by the end gcode in orca slicer. Will look into that soon and update instructions.
+~~The End print macro sends it to the bottom of the printer everytime. I believe this is being caused by the end gcode in orca slicer. Will look into that soon and update instructions.~~ FIXED
+
+Will add fixable problems here. 
 
 # Step one - Installing Open CV to the klippy python enviorment
 First we need to SSH into the printer. You can do this however you feel like. See https://github.com/qidi-community/Plus4-Wiki/blob/main/content/ssh-access/README.md
@@ -155,6 +157,15 @@ You should see the following message in your console
 ```
 // Empty bed image captured and saved to /home/mks/cv2bedobjectdetect/emptybed250.jpg
 ```
+# Step Seven - Editing Machine end g-code in slicer.
+Since we are handling this in the klipper gcode we can get rid of it setting the XYZ Position after the pritn is done. 
+```
+M141 S0
+M104 S0
+M140 S0
+G1 E-3 F1800
+```
+
 # Ta-Dah We are done
 
 
