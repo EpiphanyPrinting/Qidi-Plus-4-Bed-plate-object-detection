@@ -10,7 +10,7 @@ Anytime you change build plates or damage one enought that it appears as a defec
 
 Obviously if the camera cant see it then it can't be detected so don't go leaving stuff in the front right corner where the camera can't see. 
 
-#Temporary problems
+# Temporary problems
 The End print macro sends it to the bottom of the printer everytime. I believe this is being caused by the end gcode in orca slicer. Will look into that soon
 
 # Step one - Installing Open CV to the klippy python enviorment
