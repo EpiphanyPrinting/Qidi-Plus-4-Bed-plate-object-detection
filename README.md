@@ -100,7 +100,7 @@ This needs to be added at the very top of your print_start routine. These should
 End_Print Macro
 This should be put in after first M400 located inside of the end print macro.
 ```
-    {% if (printer.gcode_move.position.z) <= 140 %}
+    {% if (printer.gcode_move.position.z) <= 137 %}
     G1 Z140 F600  
     {% else %}
     G1 Z250 F600
@@ -111,7 +111,7 @@ This should be put in after first M400 located inside of the end print macro.
 Cancel_Print Macro
 This should be put in at the top of the CANCEL_PRINT macro
 ```
-    {% if (printer.gcode_move.position.z) <= 140 %}
+    {% if (printer.gcode_move.position.z) <= 137 %}
     G1 Z140 F600  
     {% else %}
     G1 Z250 F600
