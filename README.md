@@ -141,7 +141,7 @@ CAPTURE_IMAGE_EMPTY_BED_140
 ```
 You should see the following message in your console
 ```
-// Empty bed image captured and saved to /home/mks/opencvtest/emptybed140.jpg
+// Empty bed image captured and saved to /home/mks/cv2bedobjectdetect/emptybed140.jpg
 ```
 next lext move to captures the second bed image
 ```
@@ -151,6 +151,11 @@ Now we take our second empty bed photo
 ```
 CAPTURE_IMAGE_EMPTY_BED_250
 ```
+You should see the following message in your console
+```
+// Empty bed image captured and saved to /home/mks/cv2bedobjectdetect/emptybed250.jpg
+```
+# Ta-Dah We are done
 
 
 
