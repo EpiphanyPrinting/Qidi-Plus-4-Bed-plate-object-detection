@@ -3,6 +3,14 @@ This is a mod for the Qidi plus 4 to detect if there is a current object on the 
 Let's be clear this is a mod, I am not responsible for your printer or any damages that could occur. I have done some testing with it but make no gaurrentees. 
 Make sure you create a back up of klipper + Config files incase you want to revert or mess up along the way. 
 
+# Things to know
+Anytime after a manual home the printer will need to be put back into position to read the empty bed. X5 Y300 Z140
+Anytime you change build plates or damage one enought that it appears as a defect you will need to retake the empty bed photos. See step 6.
+Obviously if the camera cant see it then it can't be detected so don't go leaving stuff in the front right corner where the camera can't see. 
+
+#Temporary problems
+The End print macro sends it to the bottom of the printer everytime. I believe this is being caused by the end gcode in orca slicer. Will look into that soon
+
 # Step one - Installing Open CV to the klippy python enviorment
 First we need to SSH into the printer. You can do this however you feel like. See https://github.com/qidi-community/Plus4-Wiki/blob/main/content/ssh-access/README.md
 
@@ -32,7 +40,7 @@ nano cv2_bed_object_detect.py
 ```
 Now that you have cv2bedobjectdetect.py open in nano copy the contents of the file cv2bedobjectdetect.py from this github directory (simple copy and paste into shell terminal should work) and ctrl+S to save and ctrl+x to exit nano. 
 
-# Step Three Adding the CFG file. 
+# Step Three - Adding the CFG file. 
 First we will navigate to the klipper config directory
 ```
 cd ~/klipper_config
