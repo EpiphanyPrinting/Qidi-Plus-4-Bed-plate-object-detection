@@ -158,7 +158,7 @@ You should see the following message in your console
 // Empty bed image captured and saved to /home/mks/cv2bedobjectdetect/emptybed250.jpg
 ```
 # Step Seven - Editing Machine end g-code in slicer.
-Since we are handling this in the klipper gcode we can get rid of it setting the XYZ Position after the pritn is done. 
+Since we are handling this in the klipper gcode we can get rid of it setting the XYZ Position after the print is done. 
 ```
 M141 S0
 M104 S0
