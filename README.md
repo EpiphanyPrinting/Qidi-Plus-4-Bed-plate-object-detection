@@ -8,7 +8,14 @@ Anytime after a manual home the printer will need to be put back into position t
 
 Anytime you change build plates or damage one enought that it appears as a defect you will need to retake the empty bed photos. See step 6.
 
+If you have any other changes such as front covers/belts accessories in camera view you will need to take new photos. 
+
+If you have a carto/beacon and your wires are all floppy this will probably cause you issues.
+
+Theres probably more but I've only minimally tested this.
+
 Obviously if the camera cant see it then it can't be detected so don't go leaving stuff in the front right corner where the camera can't see. 
+
 
 # Temporary problems
 The End print macro sends it to the bottom of the printer everytime. I believe this is being caused by the end gcode in orca slicer. Will look into that soon
