@@ -180,8 +180,9 @@ class cv2_bed_object_detect:
                 return  # Allow printing
 
             # If neither 140 nor 250 matched, cancel the print
-            self.gcode.respond_info(f"Object detected on the bed! Canceling print job...")
-            self.gcode.run_script_from_command("CANCEL_PRINT")
+            # Cancel the print job
+            print_manager = self.printer.lookup_object("print")
+            print_manager.cancel_print()
 
         except Exception as e:
             self.gcode.respond_info(f"Error: {str(e)}")
