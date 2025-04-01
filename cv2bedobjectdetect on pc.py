@@ -137,7 +137,6 @@ class TestBedChecker:
                 return  # Allow printing
 
             # If neither 140 nor 250 matched, cancel the print
-            self.gcode.respond_info(f"Object detected on the bed! Canceling print job...")
             self.gcode.run_script_from_command("CANCEL_PRINT")
 
         except Exception as e:
